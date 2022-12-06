@@ -19,44 +19,48 @@
                 </div>
             </div>
             <div class="desc">
-                <div class="word">Forget cooking friends and family. Jesse and I are coding now. 
-                    Sign up for our newsletter below and we'll keep you up to date on all of our legal coding in the local desert.</div>
+                <div class="word"><p>Forget cooking friends and family. Jesse and I are coding now. 
+                    Sign up for our newsletter below and we'll keep you up to date on all of our legal coding in the local desert.</p></div>
+                    <div class="words"><p>Say my name, everyone. I AM the programmer...</p></div>
                 <div class="form">
-                    <form>
+                    <form action="./pages/action.php">
                         <fieldset id="field"> 
+                            <legend>Create an account.  All fields are required:</legend>
                         <div class="input">
-                            <label for="fName">First Name</label>
-                        <input type="text" id="box" name="First Name" onfocus="this.value=''" value="First Name">
+                            <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="First Name" onfocus="this.value=''"  value="First Name" minlength="5" maxlength="15" required>
                         </div>
                         
                         <div class="input">
-                        <label for="lName">Last Name</label>
-                        <input type="text" id="box" name="Last Name" onfocus="this.value=''" value="Last Name">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Last Name" onfocus="this.value=''" value="Last Name" inlength="5" maxlength="15" required>
                         </div>
                        
                         <div class="input">
                         <label for="email">Email</label>
-                        <input type="text" id="box" name="Email" onfocus="this.value=''" value="Email">
+                        <input type="email" id="email" placeholder="Email" onfocus="this.value=''" value="Email" required>
                         </div>
 
                         <div class="input">
                         <label for="phone">Phone Number</label>
-                        <input type="text" id="box" name="Phone Number" onfocus="this.value=''" value="Phone Number">
+                        <input type="number" id="box" placeholder="Phone Number" onfocus="this.value=''" value="Phone Number" required>
                         </div>
 
                         <div class="input">
-                        <label for="pword">Password</label>
-                        <input type="text" id="box" name="Password" onfocus="this.value=''" value="Password">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password" onfocus="this.value=''" value="Password" required>
                         </div>
 
                         <div class="input">
-                        <label for="conf">Confirm Password</label>
-                        <input type="text" id="box" name="Confirm Password" onfocus="this.value=''" value="Confirm Password">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" id="password" placeholder="Confirm Password" onfocus="this.value=''" value="Confirm Password" required>
                     </div>
                     </fieldset>
-                    </form>
+                    
                 </div>
-               <button class="btn">Create Account</button> 
+               <button type="submit" class="btn">Create Account</button> 
+            </form>
+               <div class="login">Already have an account? <a href="./pages/welcome.HTML">Log in</a></div>
             </div>
         </div>
     </div>
