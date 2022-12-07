@@ -133,7 +133,7 @@ $midnight-blue-2: #001057ff;*/
     
 }
 
-legend {
+.fields {
     position: relative;
     bottom: -15px;
     right: -30px;
@@ -244,4 +244,54 @@ width: 200px;
     width: 1000px;
     height: auto;
     right: 510px;
+}
+
+.background1 {
+    background-image: url("../images/background.png");
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.jelly {
+    background:rgba(5, 139, 172, 0.7);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: solid #001057ff;
+    box-shadow: 1px 1px 1px #001057ff;
+    border-radius: 20px;
+    height: 70vh;
+    width: 400px
+}
+
+.gotcha {
+    display: flex;
+    position: absolute;
+    width: 270px;
+    font: 1em "Nautical";
+    color: white;
+}
+
+.leg {
+    display: flex;
+    position: relative;
+    bottom: -250px;
+    border: none;
+}
+
+.newfield {
+    border: none;
+}
+
+textarea {
+    border: none;
+    display: flex;
+    position: relative;
+    bottom: -250px;
+    width: 300px;
+    height: 200px;
 }
